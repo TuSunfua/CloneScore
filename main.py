@@ -83,7 +83,7 @@ def worker(works: list[str]) -> None:
         for i in range(len(subjects)):
             sheet.cell(row=1, column=i+3, value=subjects[i])
 
-        last_sbd = int(work + 1) * 1000000 - 1
+        last_sbd = (int(work) + 1) * 1000000 - 1
         curr_sbd = int(work) * 1000000 + 1
         curr_row = 2
         failed = 0
